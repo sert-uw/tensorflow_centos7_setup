@@ -13,19 +13,18 @@ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
 source ~/.bash_profile
-exec $SHELL -l
 
 pyenv install 3.5.1
 pyenv local 3.5.1
 pyenv global 3.5.1
 
-git clone https://github.com/cjlin1/libsvm.git
-cd libsvm
+git clone https://github.com/cjlin1/libsvm.git ~/
+cd ~/libsvm
 make
-cd python
+cd ~/libsvm/python
 make
 
-cd
+cd ~
 
 wget http://ci.tensorflow.org/view/Nightly/job/nightly-matrix-cpu/TF_BUILD_CONTAINER_TYPE=CPU,TF_BUILD_IS_OPT=OPT,TF_BUILD_IS_PIP=PIP,TF_BUILD_PYTHON_VERSION=PYTHON3,label=cpu-slave/lastSuccessfulBuild/artifact/pip_test/whl/tensorflow-0.8.0-cp34-cp34m-linux_x86_64.whl
 
