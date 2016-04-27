@@ -3,6 +3,8 @@ sudo yum -y install git
 sudo yum -y install vim
 sudo yum -y install tmux
 sudo yum -y install wget
+sudo yum -y install epel-release
+sudo yum -y install htop
 sudo yum -y groupinstall "Development Tools"
 sudo yum -y install readline-devel zlib-devel bzip2-devel sqlite-devel openssl-devel
 
