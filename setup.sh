@@ -18,7 +18,7 @@ pyenv install 3.5.1
 pyenv local 3.5.1
 pyenv global 3.5.1
 
-git clone https://github.com/cjlin1/libsvm.git ~/
+git clone https://github.com/cjlin1/libsvm.git ~/libsvm
 cd ~/libsvm
 make
 cd ~/libsvm/python
